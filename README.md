@@ -1,5 +1,5 @@
-# 📘 KRAFTON TechLab Week03 – Unreal Engine Style 3D Editor & Rendering System
-📌 프로젝트 개요
+#  KRAFTON TechLab Week03 – Unreal Engine Style 3D Editor & Rendering System
+ 프로젝트 개요
 
 ### 프로젝트명: Unreal Engine Style 3D Editor & Rendering System
 
@@ -11,29 +11,22 @@
 <img width="1911" height="1104" alt="image" src="https://github.com/user-attachments/assets/2aa029db-2fca-451d-aeaf-607d3256ccee" />
 
 
-## 🚀 구현 완료 사항
-### 🎨 1. Editor & Rendering System (눈에 보이는 세상)
-#### 1.1 실시간 텍스트 렌더링 시스템(이호진)
+###  구현 완료 사항
+#### 1. 실시간 텍스트 렌더링 시스템(이호진)
 
 파일: TextBillboard.hlsl, Week02/UI/
 
 기능
 
-ASCII 문자 → 텍스처 아틀라스 베이킹
+텍스처 아틀라스를 이용한 텍스트 렌더링
 
-UV 좌표 조작을 통한 임의 문자열 생성
-
-Billboard 효과 (항상 카메라를 향함)
-
-월드 공간의 UObject UUID 실시간 표시
+Billboard 텍스트를 통한 월드 공간의 UObject UUID 실시간 표시
 
 기술
 
 ViewInverse 행렬을 이용한 카메라 정렬
 
-Alpha Testing 기반 텍스트 윤곽 처리
-
-#### 1.2 Batch Line 렌더링 시스템
+#### 2. Batch Line 렌더링 시스템
 
 파일: ShaderLine.hlsl
 
@@ -43,38 +36,31 @@ Alpha Testing 기반 텍스트 윤곽 처리
 
 D3D11_PRIMITIVE_TOPOLOGY_LINELIST 기반
 
-World Grid, Bounding Box 시각화
-
 성능 최적화
 
 단일 Draw Call 처리
 
 동적 버퍼 업데이트 지원
 
+#### 3. 렌더링 파이프라인 구축
 
-## 🖥 렌더링 파이프라인
+기능
 
-World Grid (Show Flag)
+3D 물체 렌더링
 
-Primitive Geometry (Lit/Unlit/Wireframe)
+병합비용 감소를 위한 Proxy(DTO)를 사용한 렌더링 로직 관심사 분리
 
-Bounding Boxes (Show Flag)
+#### 4. 수학 라이브러리 구축
 
-Billboard Text (UUID) (Show Flag)
+기능
 
-Gizmo (선택된 객체)
+행렬 연산을 위한 Matrix및 Vector 구현
 
-셰이더 구성
+#### 5. 마우스 드래그 구현
 
-Primitive.hlsl: 기본 메시
+기능 
 
-ShaderLine.hlsl: 라인/그리드
+마우스 드래그 시 기즈모의 역할에 따른 기능 수행(Translate, Rotate, Scale)
 
-TextBillboard.hlsl: 빌보드 텍스트
 
-##  성능 최적화
-
-배치 렌더링: Draw Call 최소화
-
-텍스처 아틀라스: 폰트 통합 관리
 
