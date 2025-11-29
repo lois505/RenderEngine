@@ -16,13 +16,13 @@
 
 파일: TextBillboard.hlsl, Week02/UI/
 
-기능
+- 기능
 
 텍스처 아틀라스를 이용한 텍스트 렌더링
 
 Billboard 텍스트를 통한 월드 공간의 UObject UUID 실시간 표시
 
-기술
+- 기술
 
 ViewInverse 행렬을 이용한 카메라 정렬
 
@@ -30,21 +30,19 @@ ViewInverse 행렬을 이용한 카메라 정렬
 
 파일: ShaderLine.hlsl
 
-기능
+- 기능
 
 모든 Line을 하나의 Vertex/Index Buffer로 관리
 
 D3D11_PRIMITIVE_TOPOLOGY_LINELIST 기반
 
-성능 최적화
+- 성능 최적화
 
 단일 Draw Call 처리
 
-동적 버퍼 업데이트 지원
-
 #### 3. 렌더링 파이프라인 구축
 
-기능
+- 기능
 
 3D 물체 렌더링
 
@@ -52,13 +50,13 @@ D3D11_PRIMITIVE_TOPOLOGY_LINELIST 기반
 
 #### 4. 수학 라이브러리 구축
 
-기능
+- 기능
 
 행렬 연산을 위한 Matrix및 Vector 구현
 
 #### 5. 마우스 드래그 구현
 
-기능 
+- 기능 
 
 마우스 드래그 시 기즈모의 역할에 따른 기능 수행(Translate, Rotate, Scale)
 
