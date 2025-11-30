@@ -11,7 +11,7 @@
 <img width="1911" height="1104" alt="image" src="https://github.com/user-attachments/assets/2aa029db-2fca-451d-aeaf-607d3256ccee" />
 
 # 개인적 성취
-- 1주차
+- 1주차 ( https://github.com/lois505/RenderEngine_W1 )
 - 렌더링 파이프라인 구축
 - MeshManager 구축(캐싱)
 - 렌더링 로직과 엔진 로직 분리(DTO{Proxy}패턴 사용)
