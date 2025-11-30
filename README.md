@@ -1,4 +1,4 @@
-# 📘 KRAFTON TechLab Week03 – Unreal Engine Style 3D Editor & Rendering System
+# 📘 (Team Project) KRAFTON TechLab Week03 – Unreal Engine Style 3D Editor & Rendering System
 📌 프로젝트 개요
 
 ### 프로젝트명: Unreal Engine Style 3D Editor & Rendering System(팀프로젝트)
